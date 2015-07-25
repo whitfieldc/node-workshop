@@ -1,5 +1,5 @@
-var express = require('express'), 
-    http = require('http'), 
+var express = require('express'),
+    http = require('http'),
     path = require('path'),
     Post = require('./Post');
 
@@ -25,15 +25,12 @@ app.configure('development', function() {
 app.get('/', function(request, response) {
 
     // TODO: How do we get a list of all model objects using a mongoose model?
-    Post.CHANGEME(function(err, posts) {
-        if (err) {
-            response.send(500, 'There was an error - tough luck.');
-        }
-        else {
-            response.render('index', {
-                posts:posts
-            });
-        }
+    Post.run().then(function(posts) {
+        response.render('index', {
+            posts:posts
+        }).error(handleError(response));
+        console.log('response:')
+        console.log(response);
     });
 });
 
@@ -45,19 +42,29 @@ app.get('/new', function(request, response) {
 // create a new blog post object
 app.post('/create', function(request, response) {
     // TODO: Create and save a Post model
-    var post = CHANGEME();
+    var post = new Post(request.body);
 
     // TODO: Save the model
-    post.CHANGEME(function(err, model) {
-        if (err) {
-            response.send(500, 'There was an error - tough luck.');
-        }
-        else {
-            response.redirect('/');
-        }
-    });
+    post.save().then(function(result){
+        response.redirect('/');
+        console.log(JSON.stringify(result));
+    }).error(handleError(response));
+    // (function(err, model) {
+    //     if (err) {
+    //         response.send(500, 'There was an error - tough luck.');
+    //     }
+    //     else {
+    //         response.redirect('/');
+    //     }
+    // });
 });
 
 http.createServer(app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port'));
 });
+
+function handleError(res) {
+    return function(error) {
+        return res.send(500, {error: error.message});
+    }
+}

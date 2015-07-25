@@ -1,0 +1,32 @@
+2015-07-24T20:37:24.636254000 0.663361s notice: Recursively removing directory /Users/Charlie/Desktop/FEM/node/node-workshop/challenge4/start/rethinkdb_data/tmp
+2015-07-24T20:37:24.638288000 0.665401s notice: Initializing directory /Users/Charlie/Desktop/FEM/node/node-workshop/challenge4/start/rethinkdb_data
+2015-07-24T20:37:24.638404000 0.665510s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/Charlie/Desktop/FEM/node/node-workshop/challenge4/start/rethinkdb_data' did not already exist or is empty.)
+2015-07-24T20:37:24.638456000 0.665561s notice: Running rethinkdb 2.0.4 (CLANG 6.1.0 (clang-602.0.53))...
+2015-07-24T20:37:24.645565000 0.672672s notice: Running on Darwin 14.4.0 x86_64
+2015-07-24T20:37:24.645615000 0.672720s notice: Loading data from directory /Users/Charlie/Desktop/FEM/node/node-workshop/challenge4/start/rethinkdb_data
+2015-07-24T20:37:24.824945000 0.852050s info: Automatically using cache size of 100 MB
+2015-07-24T20:37:24.824957000 0.852061s warn: Cache size does not leave much memory for server and query overhead (available memory: 762 MB).
+2015-07-24T20:37:24.824961000 0.852066s warn: Cache size is very low and may impact performance.
+2015-07-24T20:37:24.826497000 0.853602s notice: Listening for intracluster connections on port 29015
+2015-07-24T20:37:24.830252000 0.857357s notice: Listening for client driver connections on port 28015
+2015-07-24T20:37:24.830400000 0.857505s notice: Listening for administrative HTTP connections on port 8080
+2015-07-24T20:37:24.830409000 0.857514s notice: Listening on addresses: 127.0.0.1, ::1
+2015-07-24T20:37:24.830414000 0.857519s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2015-07-24T20:37:24.830419000 0.857524s notice: Server ready, "Charless_Air_wf9" 929d73c0-b302-4a48-9bfe-af5c8d631ecc
+2015-07-24T21:02:16.171717000 268.438066s notice: Server got SIGINT from pid 268, uid 501; shutting down...
+2015-07-24T21:02:16.171927000 268.438275s notice: Shutting down client connections...
+2015-07-24T21:02:16.176248000 268.442596s notice: All client connections closed.
+2015-07-24T21:02:16.176255000 268.442603s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2015-07-24T21:02:16.187459000 268.453808s notice: Storage engine shut down.
+2015-07-24T21:03:28.193306000 0.369030s notice: Running rethinkdb 2.0.4 (CLANG 6.1.0 (clang-602.0.53))...
+2015-07-24T21:03:28.211095000 0.386814s notice: Running on Darwin 14.4.0 x86_64
+2015-07-24T21:03:28.211161000 0.386877s notice: Loading data from directory /Users/Charlie/Desktop/FEM/node/node-workshop/challenge4/start/rethinkdb_data
+2015-07-24T21:03:28.255164000 0.430881s info: Automatically using cache size of 100 MB
+2015-07-24T21:03:28.255176000 0.430892s warn: Cache size does not leave much memory for server and query overhead (available memory: 612 MB).
+2015-07-24T21:03:28.255182000 0.430899s warn: Cache size is very low and may impact performance.
+2015-07-24T21:03:28.256073000 0.431790s notice: Listening for intracluster connections on port 29015
+2015-07-24T21:03:28.257713000 0.433429s notice: Listening for client driver connections on port 28015
+2015-07-24T21:03:28.257862000 0.433578s notice: Listening for administrative HTTP connections on port 8080
+2015-07-24T21:03:28.257865000 0.433598s notice: Listening on addresses: 127.0.0.1, ::1
+2015-07-24T21:03:28.257890000 0.433606s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2015-07-24T21:03:28.257893000 0.433609s notice: Server ready, "Charless_Air_wf9" 929d73c0-b302-4a48-9bfe-af5c8d631ecc
